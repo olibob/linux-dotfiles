@@ -14,10 +14,10 @@ alias vi='vim'
 alias vim-update='vim +PluginInstall +qall'
 
 # Docker Aliases
-dps='docker ps'
-dpa='docker ps -a'
-dm='docker-machine'
-dcp='docker-compose'
+alias dps='docker ps'
+alias dpa='docker ps -a'
+alias dm='docker-machine'
+alias dcp='docker-compose'
 
 # Exports
 export VISUAL="vim"
