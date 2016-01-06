@@ -30,6 +30,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -154,6 +155,19 @@ if has('langmap') && exists('+langnoremap')
   set langnoremap
 endif
 
+set number		                  	" show line numbers
+set shiftwidth=2		              " number of white spaces for >>
+set tabstop=2			                " number of spaces for tabs
+set expandtab			                " use spaces for tabs
+set showmatch                     " show () [] {} matches 
+set ruler                         " put meaningfull info in the bottom line
+
+
+"
+"
+" Plugin Configuration
+" 
+"
 " Markdown Preview
 " Needs the Markview chorme extension to work
 " https://chrome.google.com/webstore/detail/markview/iaddkimmopgchbbnmfmdcophmlnghkim?hl=en
@@ -172,3 +186,7 @@ map <silent><C-d> :AsciiDoctorPreview<cr><cr>
 " plasticboy/vim-markdown
 " Disable automatic folding
 let g:vim_markdown_folding_disabled=1
+
+" airblade/vim-gitgutter
+map <C-j> :GitGutterNextHunk<CR>
+map <C-k> :GitGutterPrevHunk<CR>
