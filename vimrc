@@ -158,3 +158,9 @@ endif
 " https://chrome.google.com/webstore/detail/markview/iaddkimmopgchbbnmfmdcophmlnghkim?hl=en
 command MarkdownPreview !chromium %
 map <silent><C-m> :MarkdownPreview<cr><cr>
+
+" Asciidoctor Preview
+" Needs the Asciidoctor.js Live Preview chrome extension to work
+" https://chrome.google.com/webstore/detail/asciidoctorjs-live-previe/iaalpfgpbocpdfblpnhhgllgbdbchmia
+command AsciiDoctorPreview !chromium %
+map <silent><C-d> :AsciiDoctorPreview<cr><cr>
