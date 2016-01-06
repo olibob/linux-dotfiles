@@ -164,3 +164,10 @@ map <silent><C-m> :MarkdownPreview<cr><cr>
 " https://chrome.google.com/webstore/detail/asciidoctorjs-live-previe/iaalpfgpbocpdfblpnhhgllgbdbchmia
 command AsciiDoctorPreview !chromium %
 map <silent><C-d> :AsciiDoctorPreview<cr><cr>
+
+"
+" Plugin configuration
+"
+" plasticboy/vim-markdown
+" Disable automatic folding
+let g:vim_markdown_folding_disabled=1
