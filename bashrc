@@ -13,6 +13,9 @@ alias vi='vim'
 # https://github.com/VundleVim/Vundle.vim
 alias vim-update='vim +PluginInstall +qall'
 
+# Not defined yet
+alias nn='vi ~/Dropbox/Notes'
+
 # Docker Aliases
 alias dps='docker ps'
 alias dpa='docker ps -a'
