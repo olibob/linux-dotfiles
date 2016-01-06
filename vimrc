@@ -28,6 +28,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'plasticboy/vim-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -151,3 +152,9 @@ if has('langmap') && exists('+langnoremap')
   " compatible).
   set langnoremap
 endif
+
+" Markdown Preview
+" Needs the Markview chorme extension to work
+" https://chrome.google.com/webstore/detail/markview/iaddkimmopgchbbnmfmdcophmlnghkim?hl=en
+command MarkdownPreview !chromium %
+map <silent><C-m> :MarkdownPreview<cr><cr>
