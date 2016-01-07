@@ -169,6 +169,14 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+
+"
+" Auto commands
+"
+autocmd BufWritePre * :%s/\s\+$//e        " remove trailing spaces for all files
+"autocmd BufWritePre *.rb :%s/\s\+$//e     " remove trailing spaces for ruby files (e.g.)
+
 "
 "
 " Plugin Configuration
