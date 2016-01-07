@@ -32,6 +32,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -156,6 +157,10 @@ if has('langmap') && exists('+langnoremap')
   set langnoremap
 endif
 
+"
+" General options
+"
+:let mapleader = ","
 set number		                  	" show line numbers
 set shiftwidth=2		              " number of white spaces for >>
 set tabstop=2			                " number of spaces for tabs
@@ -208,3 +213,6 @@ map <C-k> :GitGutterPrevHunk<CR>
 " bling/vim-airline
 set laststatus=2                  " always show airline
 let g:airline_powerline_fonts = 1 " automatically populate the g:airline_symbols dictionary with the powerline symbols
+
+" scrooloose/nerdtree
+map <leader>nn :NERDTree<cr>
