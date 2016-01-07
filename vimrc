@@ -161,8 +161,13 @@ set tabstop=2			                " number of spaces for tabs
 set expandtab			                " use spaces for tabs
 set showmatch                     " show () [] {} matches 
 set ruler                         " put meaningfull info in the bottom line
+set backupdir=/var/tmp/vim        " avoid backup clutter everywhere
 
-
+" Make arrow keys do nada while I force myself into vim's ways!!!
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 "
 "
 " Plugin Configuration
