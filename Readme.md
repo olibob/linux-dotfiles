@@ -13,3 +13,9 @@ So far ...
 - .vimrc
 
     I use [Vundle](https://github.com/VundleVim/Vundle.vim) to manage my prefered plugins
+
+### Xresources
+
+- .Xresources
+
+    Xterm, Urxvt, HiDPi stuff.
