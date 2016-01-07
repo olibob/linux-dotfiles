@@ -160,7 +160,7 @@ set number		                  	" show line numbers
 set shiftwidth=2		              " number of white spaces for >>
 set tabstop=2			                " number of spaces for tabs
 set expandtab			                " use spaces for tabs
-set showmatch                     " show () [] {} matches 
+set showmatch                     " show () [] {} matches
 set ruler                         " put meaningfull info in the bottom line
 set backupdir=/var/tmp/vim        " avoid backup clutter everywhere
 
@@ -180,7 +180,7 @@ autocmd BufWritePre * :%s/\s\+$//e        " remove trailing spaces for all files
 "
 "
 " Plugin Configuration
-" 
+"
 "
 " Markdown Preview
 " Needs the Markview chorme extension to work
