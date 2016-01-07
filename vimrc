@@ -31,6 +31,7 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -145,7 +146,7 @@ endif " has("autocmd")
 " Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+    \ | wincmd p | diffthis
 endif
 
 if has('langmap') && exists('+langnoremap')
@@ -195,3 +196,7 @@ let g:vim_markdown_folding_disabled=1
 " airblade/vim-gitgutter
 map <C-j> :GitGutterNextHunk<CR>
 map <C-k> :GitGutterPrevHunk<CR>
+
+" bling/vim-airline
+set laststatus=2                  " always show airline
+let g:airline_powerline_fonts = 1 " automatically populate the g:airline_symbols dictionary with the powerline symbols
