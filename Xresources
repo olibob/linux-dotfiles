@@ -39,6 +39,12 @@ XTerm*locale: true
 ! Fix the Alt key
 XTerm*locale: true
 
+#URxvt*borderColor:        #151515
+#URxvt*colorBD:            #ffffff
+#URxvt*cursorColor:        #ff8939
+#URxvt*cursorColor2:       #151515
+
+
 ! Solarized color scheme for the X Window System
 !
 ! http://ethanschoonover.com/solarized
@@ -85,58 +91,33 @@ XTerm*locale: true
 !
 ! URxvt*background:            S_base03
 
-xterm*background:              S_base03
-xterm*foreground:              S_base0
-xterm*fading:                  40
-xterm*fadeColor:               S_base03
-xterm*cursorColor:             S_base1
-xterm*pointerColorBackground:  S_base01
-xterm*pointerColorForeground:  S_base1
+*background:              S_base03
+*foreground:              S_base0
+*fading:                  40
+*fadeColor:               S_base03
+*cursorColor:             S_base1
+*pointerColorBackground:  S_base01
+*pointerColorForeground:  S_base1
 
-xterm*color0:                  S_base02
-xterm*color1:                  S_red
-xterm*color2:                  S_green
-xterm*color3:                  S_yellow
-xterm*color4:                  S_blue
-xterm*color5:                  S_magenta
-xterm*color6:                  S_cyan
-xterm*color7:                  S_base2
-xterm*color9:                  S_orange
-xterm*color8:                  S_base03
-xterm*color10:                 S_base01
-xterm*color11:                 S_base00
-xterm*color12:                 S_base0
-xterm*color13:                 S_violet
-xterm*color14:                 S_base1
-xterm*color15:                 S_base3
+*color0:                  S_base02
+*color1:                  S_red
+*color2:                  S_green
+*color3:                  S_yellow
+*color4:                  S_blue
+*color5:                  S_magenta
+*color6:                  S_cyan
+*color7:                  S_base2
+*color9:                  S_orange
+*color8:                  S_base03
+*color10:                 S_base01
+*color11:                 S_base00
+*color12:                 S_base0
+*color13:                 S_violet
+*color14:                 S_base1
+*color15:                 S_base3
 
 
-URxvt*background:              S_base03
-URxvt*foreground:              S_base0
-URxvt*fading:                  40
-URxvt*fadeColor:               S_base03
-URxvt*cursorColor:             S_base1
-URxvt*pointerColorBackground:  S_base01
-URxvt*pointerColorForeground:  S_base1
-
-URxvt*color0:                  S_base02
-URxvt*color1:                  S_red
-URxvt*color2:                  S_green
-URxvt*color3:                  S_yellow
-URxvt*color4:                  S_blue
-URxvt*color5:                  S_magenta
-URxvt*color6:                  S_cyan
-URxvt*color7:                  S_base2
-URxvt*color9:                  S_orange
-URxvt*color8:                  S_base03
-URxvt*color10:                 S_base01
-URxvt*color11:                 S_base00
-URxvt*color12:                 S_base0
-URxvt*color13:                 S_violet
-URxvt*color14:                 S_base1
-URxvt*color15:                 S_base3
-
-! URxvt 
+! URxvt
 URxvt.letterSpace: -1
 ! Compile xft: Attempt to find a visual with the given bit depth; option -depth.
 ! URxvt*depth: bitdepth
@@ -156,7 +137,7 @@ URxvt.letterSpace: -1
 ! Use the specified colour for the colour value n, where 0-7 corresponds to low-intensity (normal) colours and 8-15
 ! URxvt*colorn: colour
 
-! 
+!
 ! URxvt*colorBD: colour
 
 ! Use the specified colour to display bold or italic characters when the foreground colour is the default. If font
@@ -214,7 +195,7 @@ URxvt*font: xft:SourceCodePro\-Regular:size=8,\
 
 ! URxvt*boldFont: fontlist
 
-! 
+!
 ! URxvt*italicFont: fontlist
 
 ! The font list to use for displaying bold, italic or bold italic characters, respectively.
@@ -251,13 +232,13 @@ URxvt*loginShell: true
 ! URxvt*print-pipe: string
 
 ! Set scrollbar style to rxvt, plain, next or xterm. plain is the authors favourite.
-URxvt*scrollstyle: plain
+! URxvt*scrollstyle: plain
 
 ! Set the scrollbar width in pixels.
 ! URxvt*thickness: number
 
 ! True: enable the scrollbar [default]; option -sb. False: disable the scrollbar; option +sb.
-! URxvt*scrollBar: false
+URxvt*scrollBar: false
 
 ! True: place the scrollbar on the right of the window; option -sr.  False: place the scrollbar on the left of the
 ! URxvt*scrollBar_right: boolean
@@ -334,7 +315,7 @@ URxvt*saveLines: 3000
 ! The characters used as delimiters for double-click word selection (whitespace delimiting is added automatically if
 ! URxvt*cutchars: string
 
-! 
+!
 ! URxvt*{|}
 
 ! OverTheSpot, OffTheSpot, Root; option -pt.
@@ -396,10 +377,10 @@ URxvt*perl-ext-common: default,url-select,matcher,resize-font,clipboard
 ! URxvt*searchable-scrollback: keysym *DEPRECATED*
 
 ! Specifies the program to be started with a URL argument. Used by the "selection-popup" and "matcher" perl
-URxvt*url-launcher: /usr/bin/chromium
+URxvt*url-launcher: /usr/bin/google-chrome-stable
 URxvt*matcher.button: 1
 URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.launcher: /usr/bin/google-chrome-stable
 URxvt.url-select.underline: true
 
 ! Resize fonts
