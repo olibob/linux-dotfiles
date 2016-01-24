@@ -184,10 +184,13 @@ bar {
 ##################################
 
 # Enable lock screen
-bindsym $mod+Shift+x exec i3lock --color=404040
+bindsym $mod+Shift+x exec i3lock -e -I 1 -i $HOME/Pictures/corvette_in_hangar.png
 
 # Delay urgency hint reset
 force_display_urgency_hint 3000 ms
+
+# Focus to urgent window
+bindsym $mod+x [urgent=latest] focus
 
 # 1px border on windows
 new_window  pixel 1
