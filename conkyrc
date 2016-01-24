@@ -1,0 +1,31 @@
+# Needs fontwaesome to display correctly
+out_to_x no
+own_window no
+out_to_console yes
+background no
+max_text_width 0
+update_interval 1.0
+total_run_times 0
+short_units on
+if_up_strictness address
+use_spacer left
+override_utf8_locale no
+cpu_avg_samples 2
+double_buffer yes
+update_interval_on_battery 5
+
+# template
+# { "full_text: "", "color": "\#ccccc"},
+
+TEXT
+[
+{ "full_text" : " ${uptime_short}" , "color" : "\#cccccc" },
+{ "full_text" : " ${upspeed wlp2s0}", "color": "\#FF3300"},
+{ "full_text" : " ${downspeed wlp2s0}", "color": "\#009933"},
+{ "full_text" : "  ${wireless_essid wlp2s0}", "color": "\#cccccc"},
+{ "full_text" : "  ${cpu}", "color": ${if_match ${cpu}>80}"\#FF0000"${else}"\#cccccc"${endif} },
+{ "full_text" : "  ${memperc}%" , "color" : ${if_match ${memperc}<80}"\#cccccc"${else}"\#ff0000"${endif} },
+{ "full_text" : "  ${fs_free /}" , "color" : "\#cccccc"},
+{ "full_text" : "  ${battery_time} (${battery_short})" , "color" : ${if_match ${battery_percent}<30}"\#ff9900"${else}"\#cccccc"${endif} },
+{ "full_text" : "  ${time %a %d %b %H:%M}", "color": "\#cccccc"}
+],
