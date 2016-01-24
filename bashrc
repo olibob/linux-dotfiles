@@ -8,16 +8,21 @@
 # Switch to vi mode
 set -o vi
 
+# Solarized dir colors
+# based on https://github.com/seebi/dircolors-solarized.git
+eval `dircolors $HOME/Vrac/dircolors-solarized/dircolors.256dark`
+
 # General Aliases
 alias ls='ls --color=auto'
 alias l='ls -tr1'
+alias ll='ls -lh'
 alias la='ls -la'
 alias vi='vim'
 # https://github.com/VundleVim/Vundle.vim
 alias vim-update='vim +PluginInstall +qall'
 
 # Not defined yet
-alias nn='vi ~/Dropbox/Notes'
+alias nn='cd ~/Dropbox/Notes; vi'
 
 # Docker Aliases
 alias dps='docker ps'
