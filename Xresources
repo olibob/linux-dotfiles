@@ -1,5 +1,5 @@
 ! Fonts ------------------------------------------
-Xft.dpi: 192
+Xft.dpi: 164
 Xft.autohint: 0
 Xft.lcdidentifier: lcddefault
 Xft.hintstyle: hintfull
@@ -189,8 +189,8 @@ URxvt.letterSpace: -1
 ! URxvt*borderColor: colour
 
 ! Select the fonts to be used. This is a comma separated list of font names that are checked in order when trying to
-URxvt*font: xft:SourceCodePro\-Regular:size=8,\
-	    xft:DejaVu Sans:size=8
+URxvt*font: xft:SourceCodePro\-Regular:size=9,\
+	    xft:DejaVu Sans:size=9
 
 
 ! URxvt*boldFont: fontlist

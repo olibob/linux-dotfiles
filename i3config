@@ -170,7 +170,7 @@ bar {
   #tray_output primary
 
 	# Font
-  font pango:SourceCodePro 10
+  font pango:SourceCodePro 9
 
 	colors {
     background #404040
