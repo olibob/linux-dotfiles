@@ -203,6 +203,7 @@ URxvt*font: xft:SourceCodePro\-Regular:size=9,\
 
 ! When font styles are not enabled, or this option is enabled (True, option -is, the default), bold/blink font
 ! URxvt*intensityStyles: boolean
+URxvt*intensityStyles: false
 
 ! Set window title string, the default title is the command-line specified after the -e option, if any, otherwise
 ! URxvt*title: string
