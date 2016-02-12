@@ -10,7 +10,7 @@ set -o vi
 
 # Solarized dir colors
 # based on https://github.com/seebi/dircolors-solarized.git
-eval `dircolors $HOME/Vrac/dircolors-solarized/dircolors.256dark`
+eval `dircolors $HOME/m/Vrac/dircolors-solarized/dircolors.256dark`
 
 # General Aliases
 alias ls='ls --color=auto'
