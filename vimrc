@@ -173,6 +173,9 @@ set expandtab			                " use spaces for tabs
 set showmatch                     " show () [] {} matches
 set ruler                         " put meaningfull info in the bottom line
 set backupdir=/var/tmp/vim        " avoid backup clutter everywhere
+set undodir=/var/tmp/vim          " avoid undo files clutter
+set undolevels=1000               " how many undos
+set undoreload=10000              " number of lines to save for undo
 
 " Make arrow keys do nada while I force myself into vim's ways!!!
 noremap <Up> <NOP>
