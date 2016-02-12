@@ -17,6 +17,7 @@ alias ls='ls --color=auto'
 alias l='ls -tr1'
 alias ll='ls -lh'
 alias la='ls -la'
+alias grep='grep --color=auto'
 alias vi='vim'
 # https://github.com/VundleVim/Vundle.vim
 alias vim-update='vim +PluginInstall +qall'
