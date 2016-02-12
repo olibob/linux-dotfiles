@@ -217,4 +217,5 @@ exec --no-startup-id nm-applet
 
 # Start Apps
 exec --no-startup-id dropbox
+exec --no-startup-id megasync
 #exec --no-startup-id slack
