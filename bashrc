@@ -39,6 +39,7 @@ mcd() {
 
 # Exports
 export VISUAL="vim"
+export EDITOR="vim"
 
 # Colored man pages
 man() {
