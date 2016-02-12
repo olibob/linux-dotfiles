@@ -198,13 +198,13 @@ autocmd BufWritePre * :%s/\s\+$//e        " remove trailing spaces for all files
 " Markdown Preview
 " Needs the Markview chorme extension to work
 " https://chrome.google.com/webstore/detail/markview/iaddkimmopgchbbnmfmdcophmlnghkim?hl=en
-command MarkdownPreview !chromium %
+command MarkdownPreview !google-chrome-stable %
 map <silent><C-m> :MarkdownPreview<cr><cr>
 
 " Asciidoctor Preview
 " Needs the Asciidoctor.js Live Preview chrome extension to work
 " https://chrome.google.com/webstore/detail/asciidoctorjs-live-previe/iaalpfgpbocpdfblpnhhgllgbdbchmia
-command AsciiDoctorPreview !chromium %
+command AsciiDoctorPreview !google-chrome-stable %
 map <silent><C-d> :AsciiDoctorPreview<cr><cr>
 
 "
