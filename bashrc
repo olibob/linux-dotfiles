@@ -31,6 +31,12 @@ alias dpa='docker ps -a'
 alias dm='docker-machine'
 alias dcp='docker-compose'
 
+# Helpers
+
+mcd() {
+  mkdir -p "$1" && cd "$1"
+}
+
 # Exports
 export VISUAL="vim"
 
