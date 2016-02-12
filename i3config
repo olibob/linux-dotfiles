@@ -212,6 +212,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 # Start compositing
 exec --no-startup-id compton -GCb
 
+# Start NetorkManager applet
 exec --no-startup-id nm-applet
 
 # Start Apps
