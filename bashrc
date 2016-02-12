@@ -50,6 +50,7 @@ source /usr/share/git/completion/git-completion.bash
 
 # Uncommented due to bash-git-prompt usage below
 #PS1='[\u@\h \W]\$ '
+PS1='\e[0;33m\]\w\e[m\] \n\D{%H:%M} \$ '
 
 # gitprompt configuration
 # For special glyphs rendering in urxvt: https://goo.gl/KuqeFe
