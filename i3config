@@ -184,7 +184,7 @@ bar {
 ##################################
 
 # Enable lock screen
-bindsym $mod+Shift+x exec i3lock -e -I 1 -i $HOME/Pictures/corvette_in_hangar.png
+bindsym $mod+Shift+x exec i3lock -e -I 1 -i $HOME/m/Pictures/motivational-fail-messagex2.png
 
 # Delay urgency hint reset
 force_display_urgency_hint 3000 ms
